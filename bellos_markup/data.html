@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@1.8.9/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <title>каталог</title>
+</head>
+
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="./index.html">
+        <img class="header__logo logo" src="./images/icons/logo.svg" alt=""></a>
+      <nav class="header__menu menu nav">
+        <ul class="menu__list">
+          <li class="menu__item-first"><a a href="./about.html" class="menu__link">О КОМПАНИИ</a></li>
+          <li class="menu__item-first"><a a href="./main-brands.html" class="menu__link">БРЕНДЫ</a></li>
+          <li class="menu__item-first"><a a href="./main-promotions.html" class="menu__link">АКЦИИ</a></li>
+          <li class="menu__item-first"><a a href="./main-contacts.html" class="menu__link">КОНТАКТЫ</a></li>
+        </ul>
+        <ul class="menu__list">
+          <li class="menu__item menu__item__icon">
+            <a href="./404.html">
+            <div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second" src="./images/icons/Whatsapp.svg" alt="">
+          </div>
+        </a>
+          </li>
+          <li class="menu__item menu__item__icon"><a href="./404.html"><div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second main__img-custom" src="./images/icons/airplane.svg" alt="">
+          </div></a></li>
+          <li id="modalBtn" class="menu__item menu__item__icon"><a><div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second" src="./images/icons/user.svg" alt="">
+          </div></a></li>
+          <li class="menu__item menu__item__icon menu__item-right">ИМЯ ПОЛЬЗОВАТЕЛЯ</li>
+          <li class="menu__item menu__item__icon menu__item-right menu__item-entrance">ВХОД В ЛИЧНЫЙ КАБИНЕТ</li>
+        </ul>
+        <ul class="menu__list-new">
+          <li class="menu__item menu__item__icon">
+            <a href="./404.html">
+            <div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second" src="./images/icons/Whatsapp.svg" alt="">
+          </div>
+        </a>
+          </li>
+          <li class="menu__item menu__item__icon"><a href="./404.html"><div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second main__img-custom" src="./images/icons/airplane.svg" alt="">
+          </div></a>
+        </li>
+          <li class="menu__item-text">ВХОД В ЛИЧНЫЙ КАБИНЕТ</li>
+          <li id="modalBtn" class="menu__item menu__item-user"><a><div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second" src="./images/icons/user.svg" alt="">
+          </div></a></li>
+          <li class="menu__item menu__item__icon menu__item-right menu__item-entrance">ВХОД В ЛИЧНЫЙ КАБИНЕТ</li>
+        </ul>
+        <button class="menu__button">ВЫХОД</button>
+        
+      </nav>
+      <div class="burger burger__btn"></div>
+    </div>
+  </div>
+  <div class="modal">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Логин</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Пароль</p>
+          <input class="modal__input modal__input__pass" type="password">
+          <button class="modal__button">ВХОД</button>
+          <p class="modal__button modal__button-second" id="create-an-application">ЗАЯВКА НА ЛИЧНЫЙ КАБИНЕТ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-second">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-new" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-third">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-third" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing2"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fourth">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-fourth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title">ВАША ЗАЯВКА ПРИНЯТА</h2>
+          <h3 class="modal__subtitle">МЫ СВЯЖЕМСЯ С ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fifth">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-fifth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text" id="application-processing2">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-six">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-six" src="./images/icons/Union.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text adopted">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-seven">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap modal-seven__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title modal-seven__title">ВАШ ЗАКАЗ ПРИНЯТ</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+    <div class="wrapper">
+      
+      <main class="page" id="brands">
+        <section class="catalog">
+  <div class="container">
+    <div class="catalog__wrap__block">
+      <a href="./main-catalog.html"><button class="catalog__button">КАТАЛОГ</button></a>
+      <a href="./order.html"><button class="catalog__button">СОЗДАТЬ ЗАКАЗ</button></a>
+      <a href="./history-order.html"><button class="catalog__button">ИСТОРИЯ ЗАКАЗОВ</button></a>
+      <a href="./data.html"><button class="catalog__button">ЛИЧНЫЕ ДАННЫЕ</button></a> 
+    </div>
+   
+  </div>
+</section>
+        <section class="data">
+  <div class="container__stock">
+    <ul class="catalog__list-top data__list">
+      <li class="catalog__item-top"><a href="#">Личный кабинет</a></li>
+      <li class="catalog__item-top"><a href="#">Персональные данные</a></li>
+    </ul>
+    <div class="data__wrapper">
+      <div class="data__content">
+        <div class="data__block-left">
+      <div class="data__wrap">
+        <h2 class="data__subtitle">Имя Фамилия</h2>
+        <div class="data__reg">
+          <p class="data__reg__text">ДАТА РЕГИСТРАЦИИ</p>
+          <p class="data__reg__text">12.12.2022</p>
+        </div>
+        <div class="data__block">
+          <div class="data__block-small">
+            <p class="data__block__text">Средняя сумма за заказa</p>
+            <p class="data__block__text">155 000 руб.</p>
+          </div>
+          <div class="data__block-small">
+            <p class="data__block__text">Скидка</p>
+            <p class="data__block__text">10%</p>
+          </div>
+          <div class="data__block-small">
+            <p class="data__block__text">Средняя экономия</p>
+            <p class="data__block__text">10 000 руб.</p>
+          </div>
+        </div>
+      </div>
+      <h4 class="data__subtitle-mini">ЧАСТЫЕ ЗАКАЗЫ</h4>
+        <div class="data__wrap-bottom">
+          <div class="data__block-bottom">
+            <p class="data__text-bottom">товар 1.</p>
+            <p class="data__text-bottom">2 раза</p>
+          </div>
+          <div class="data__block-bottom">
+            <p class="data__text-bottom">товар 1.</p>
+            <p class="data__text-bottom">3 раза</p>
+          </div>
+          <div class="data__block-bottom">
+            <p class="data__text-bottom">товар 1.</p>
+            <p class="data__text-bottom">10 раз</p>
+          </div>
+          <div class="data__block-bottom">
+            <p class="data__text-bottom">товар 1.</p>
+            <p class="data__text-bottom">20 раз</p>
+          </div>
+          <div class="data__block-bottom">
+            <p class="data__text-bottom">товар 1.</p>
+            <p class="data__text-bottom">2 раза</p>
+          </div>
+          <div class="data__block-bottom">
+            <p class="data__text-bottom">товар 1.</p>
+            <p class="data__text-bottom">3 раза</p>
+          </div>
+        </div>
+      </div>
+        <button class="data__button">выход из кабинета</button>
+      </div>
+      <div class="data__content">
+        <h3 class="data__subtitle-small">СТАТИСТИКА ЗАКАЗОВ</h3>
+        <div class="data__block-right">
+          <p class="data__block__btn__text-top">ПЕРИОД</p>
+          <div class="data__wrap-right">
+          <div class="canvas">
+            <svg class="chart" width="305" height="305" viewbox="0 0 50 50">
+              <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+              <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+              <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+              <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+              <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+              <!-- <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+              <circle class="unit" r="15.9" cx="50%" cy="50%"></circle> -->
+            </svg>
+            </div>
+            
+          <div class="data__block__btn">
+            <p class="data__block__btn__text">ПЕРИОД</p>
+            <button class="data__block__button">ПОСЛЕДНИЙ ЗАКАЗ</button>
+            <button class="data__block__button">ЗА МЕСЯЦ</button>
+            <button class="data__block__button">ЗА ГОД</button>
+          </div>
+          
+        </div>
+        <div class="data__wrap__color">
+        <div class="data__color"> 
+          <div class="data__block__color">
+            <div class="data__img"></div>
+            <p class="data__color__text">МАСЛО МОТОРНОЕ C.N.R.G. N-FORCE SPECIAL RS 5W-30 SN/CF; C3 (КАН. 1 Л)</p>
+          </div>
+          <span class="data__color__text">786 РУБ</span>
+        </div>
+        <div class="data__color"> 
+          <div class="data__block__color">
+            <div class="data__img data__img__green"></div>
+            <p class="data__color__text-blue data__color__text-green">МАСЛО МОТОРНОЕ C.N.R.G. N-FORCE SPECIAL RS 5W-30 SN/CF; C3 (КАН. 1 Л)</p>
+          </div>
+          <span class="data__color__text-blue data__color__text-green">786 РУБ</span>
+        </div>
+        <div class="data__color"> 
+          <div class="data__block__color">
+            <div class="data__img data__img__orange"></div>
+            <p class="data__color__text-blue data__color__text-orange">МАСЛО МОТОРНОЕ C.N.R.G. N-FORCE SPECIAL RS 5W-30 SN/CF; C3 (КАН. 1 Л)</p>
+          </div>
+          <span class="data__color__text-blue data__color__text-orange">786 РУБ</span>
+        </div>
+        <div class="data__color"> 
+          <div class="data__block__color">
+            <div class="data__img data__img__red"></div>
+            <p class="data__color__text-blue data__color__text-red">МАСЛО МОТОРНОЕ C.N.R.G. N-FORCE SPECIAL RS 5W-30 SN/CF; C3 (КАН. 1 Л)</p>
+          </div>
+          <span class="data__color__text-blue data__color__text-red">786 РУБ</span>
+        </div>
+        <div class="data__color"> 
+          <div class="data__block__color">
+            <div class="data__img data__img__gray"></div>
+            <p class="data__color__text-blue data__color__text-gray">МАСЛО МОТОРНОЕ C.N.R.G. N-FORCE SPECIAL RS 5W-30 SN/CF; C3 (КАН. 1 Л)</p>
+          </div>
+          <span class="data__color__text-blue data__color__text-gray">786 РУБ</span>
+        </div>
+        </div>
+        </div>
+
+      </div>
+      </div>
+      
+    </div>
+  </section></main></div>
+
+        
+      
+      <footer class="footer">
+  <div class="container">
+    <a href="./index.html">
+      <img class="footer__img-top" src="./images/icons/logo.svg" alt="">
+    </a>
+    <ul class="menu__list footer__list" id="footer__list">
+      <li class="menu__item-first footer__item"><a href="./about.html"> О КОМПАНИИ</a></li>
+      <li class="menu__item-first footer__item"><a href="./main-brands.html">БРЕНДЫ</a></li>
+      <li class="menu__item-first footer__item"><a href="./main-promotions.html">АКЦИИ</a></li>
+      <li class="menu__item-first footer__item"><a href="./main-contacts.html">КОНТАКТЫ</a> </li>
+      <li class="menu__item-first footer__item"><a href="./data.html">ЛИЧНЫЙ КАБИНЕТ</a></li>
+    </ul>
+    <div class="footer__wrapper">
+      <a href="./index.html">
+        <img class="footer__img" src="./images/icons/logo.svg" alt="">
+      </a>
+      <div class="footer__wrap">
+        <p class="footer__text footer__text-left">Г. МОСКВА, ПРОЕЗД ПОХОДНЫЙ, Д. 4 К. 1 ЭТАЖ МАНСАРДНЫЙ ПОМ. XIII Ч К №4</p>
+        <a href="./politics.html">
+          <p class="footer__text">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+    <script src="js/app.min.js"></script>
+  </body>
+</html> 

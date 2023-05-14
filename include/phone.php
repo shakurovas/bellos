@@ -1,0 +1,1 @@
+<a style="color: white;" class="stock__link" href="tel:+7(968)768-83-33">+7(968)768-83-33</a>

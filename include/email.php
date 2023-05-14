@@ -1,0 +1,1 @@
+<a class="stock__link" style="color: white;" href="mailto:support@talantgold.ru">bellos-opt@mail.ru</a>

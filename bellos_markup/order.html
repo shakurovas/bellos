@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@1.8.9/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <title>каталог</title>
+</head>
+
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="./index.html">
+        <img class="header__logo logo" src="./images/icons/logo.svg" alt=""></a>
+      <nav class="header__menu menu nav">
+        <ul class="menu__list">
+          <li class="menu__item-first"><a a href="./about.html" class="menu__link">О КОМПАНИИ</a></li>
+          <li class="menu__item-first"><a a href="./main-brands.html" class="menu__link">БРЕНДЫ</a></li>
+          <li class="menu__item-first"><a a href="./main-promotions.html" class="menu__link">АКЦИИ</a></li>
+          <li class="menu__item-first"><a a href="./main-contacts.html" class="menu__link">КОНТАКТЫ</a></li>
+        </ul>
+        <ul class="menu__list">
+          <li class="menu__item menu__item__icon">
+            <a href="./404.html">
+            <div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second" src="./images/icons/Whatsapp.svg" alt="">
+          </div>
+        </a>
+          </li>
+          <li class="menu__item menu__item__icon"><a href="./404.html"><div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second main__img-custom" src="./images/icons/airplane.svg" alt="">
+          </div></a></li>
+          <li id="modalBtn" class="menu__item menu__item__icon"><a><div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second" src="./images/icons/user.svg" alt="">
+          </div></a></li>
+          <li class="menu__item menu__item__icon menu__item-right">ИМЯ ПОЛЬЗОВАТЕЛЯ</li>
+          <li class="menu__item menu__item__icon menu__item-right menu__item-entrance">ВХОД В ЛИЧНЫЙ КАБИНЕТ</li>
+        </ul>
+        <ul class="menu__list-new">
+          <li class="menu__item menu__item__icon">
+            <a href="./404.html">
+            <div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second" src="./images/icons/Whatsapp.svg" alt="">
+          </div>
+        </a>
+          </li>
+          <li class="menu__item menu__item__icon"><a href="./404.html"><div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second main__img-custom" src="./images/icons/airplane.svg" alt="">
+          </div></a>
+        </li>
+          <li class="menu__item-text">ВХОД В ЛИЧНЫЙ КАБИНЕТ</li>
+          <li id="modalBtn" class="menu__item menu__item-user"><a><div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second" src="./images/icons/user.svg" alt="">
+          </div></a></li>
+          <li class="menu__item menu__item__icon menu__item-right menu__item-entrance">ВХОД В ЛИЧНЫЙ КАБИНЕТ</li>
+        </ul>
+        <button class="menu__button">ВЫХОД</button>
+        
+      </nav>
+      <div class="burger burger__btn"></div>
+    </div>
+  </div>
+  <div class="modal">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Логин</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Пароль</p>
+          <input class="modal__input modal__input__pass" type="password">
+          <button class="modal__button">ВХОД</button>
+          <p class="modal__button modal__button-second" id="create-an-application">ЗАЯВКА НА ЛИЧНЫЙ КАБИНЕТ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-second">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-new" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing-request"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-third">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-third" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing-request2"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fourth">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-fourth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title">ВАША ЗАЯВКА ПРИНЯТА</h2>
+          <h3 class="modal__subtitle">МЫ СВЯЖЕМСЯ С ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fifth">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-fifth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text" id="application-processing-request2">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-six">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-six" src="./images/icons/Union.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text adopted">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-seven">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap modal-seven__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title modal-seven__title">ВАШ ЗАКАЗ ПРИНЯТ</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+    <div class="wrapper">
+      
+      <main class="page" id="brands">
+        <section class="catalog">
+  <div class="container">
+    <div class="catalog__wrap__block">
+      <a href="./main-catalog.html"><button class="catalog__button">КАТАЛОГ</button></a>
+      <a href="./order.html"><button class="catalog__button">СОЗДАТЬ ЗАКАЗ</button></a>
+      <a href="./history-order.html"><button class="catalog__button">ИСТОРИЯ ЗАКАЗОВ</button></a>
+      <a href="./data.html"><button class="catalog__button">ЛИЧНЫЕ ДАННЫЕ</button></a> 
+    </div>
+   
+  </div>
+</section>
+        <section class="order">
+  <div class="container">
+    <ul class="catalog__list-top">
+      <li class="catalog__item-top"><a href="#">Личный кабинет</a></li>
+      <li class="catalog__item-top"><a href="#">Создать заказ</a></li>
+    </ul>
+    </div>
+    <div class="container__stock">
+    <div class="order__blocks">
+      
+    <div class="order__wrapper">
+      
+      <div class="order__wrap order__wrap-left">
+        <input class="order__input" type="text" placeholder="ПОИСК">
+          <details class="order__mobile__details">
+            <summary class="order__mobile__summary">
+             <p class="order__mobil__summary__text">Поиск по категориям </p>  <img src="./images/icons/link.svg" alt="">
+            </summary>
+            <div class="order__mobile__details__block">
+              <details class="order__details" open>
+                <summary class="order__summary">
+                  Охлаждающие жидкости
+                  <img src="./images/icons/plus.svg" alt="">
+                </summary>
+                <p class="order__text">СВ ХИМ</p>
+                <p class="order__text">Лукойл</p>
+                <p class="order__text">Нордойл</p>
+                <p class="order__text">Газпромнефть</p>
+                <p class="order__text">Обникс</p>
+              </details>
+              <details class="order__details">
+                <summary class="order__summary">
+                  Тормозные жидкости
+                  <img src="./images/icons/plus.svg" alt="">
+                </summary>
+                <p class="order__text">СВ ХИМ</p>
+                <p class="order__text">Лукойл</p>
+                <p class="order__text">Нордойл</p>
+                <p class="order__text">Газпромнефть</p>
+                <p class="order__text">Обникс</p>
+              </details>
+              <details class="order__details">
+                <summary class="order__summary">
+                  Моторные масла
+                  <img src="./images/icons/plus.svg" alt="">
+                </summary>
+                <p class="order__text">СВ ХИМ</p>
+                <p class="order__text">Лукойл</p>
+                <p class="order__text">Нордойл</p>
+                <p class="order__text">Газпромнефть</p>
+                <p class="order__text">Обникс</p>
+              </details>
+              <details class="order__details">
+                <summary class="order__summary">
+                  Смазки
+                  <img src="./images/icons/plus.svg" alt="">
+                </summary>
+                <p class="order__text">СВ ХИМ</p>
+                <p class="order__text">Лукойл</p>
+                <p class="order__text">Нордойл</p>
+                <p class="order__text">Газпромнефть</p>
+                <p class="order__text">Обникс</p>
+              </details>
+              <details class="order__details">
+                <summary class="order__summary">
+                  Автоэмали, краски
+                  <img src="./images/icons/plus.svg" alt="">
+                </summary>
+                <p class="order__text">СВ ХИМ</p>
+                <p class="order__text">Лукойл</p>
+                <p class="order__text">Нордойл</p>
+                <p class="order__text">Газпромнефть</p>
+                <p class="order__text">Обникс</p>
+              </details>
+              <details class="order__details">
+                <summary class="order__summary">
+                  Импортная автохимия
+                  <img src="./images/icons/plus.svg" alt="">
+                </summary>
+                <p class="order__text">СВ ХИМ</p>
+                <p class="order__text">Лукойл</p>
+                <p class="order__text">Нордойл</p>
+                <p class="order__text">Газпромнефть</p>
+                <p class="order__text">Обникс</p>
+              </details>
+            </div>
+            
+          </details>
+        
+        <div class="order__details__block">
+          <h3 class="order__subtitle">ПОИСК ПО КАТЕГОРИЯМ</h3>
+          <details class="order__details" open>
+            <summary class="order__summary">
+              Охлаждающие жидкости
+              <img src="./images/icons/plus.svg" alt="">
+            </summary>
+            <p class="order__text">СВ ХИМ</p>
+            <p class="order__text">Лукойл</p>
+            <p class="order__text">Нордойл</p>
+            <p class="order__text">Газпромнефть</p>
+            <p class="order__text">Обникс</p>
+          </details>
+          <details class="order__details">
+            <summary class="order__summary">
+              Тормозные жидкости
+              <img src="./images/icons/plus.svg" alt="">
+            </summary>
+            <p class="order__text">СВ ХИМ</p>
+            <p class="order__text">Лукойл</p>
+            <p class="order__text">Нордойл</p>
+            <p class="order__text">Газпромнефть</p>
+            <p class="order__text">Обникс</p>
+          </details>
+          <details class="order__details">
+            <summary class="order__summary">
+              Моторные масла
+              <img src="./images/icons/plus.svg" alt="">
+            </summary>
+            <p class="order__text">СВ ХИМ</p>
+            <p class="order__text">Лукойл</p>
+            <p class="order__text">Нордойл</p>
+            <p class="order__text">Газпромнефть</p>
+            <p class="order__text">Обникс</p>
+          </details>
+          <details class="order__details">
+            <summary class="order__summary">
+              Смазки
+              <img src="./images/icons/plus.svg" alt="">
+            </summary>
+            <p class="order__text">СВ ХИМ</p>
+            <p class="order__text">Лукойл</p>
+            <p class="order__text">Нордойл</p>
+            <p class="order__text">Газпромнефть</p>
+            <p class="order__text">Обникс</p>
+          </details>
+          <details class="order__details">
+            <summary class="order__summary">
+              Автоэмали, краски
+              <img src="./images/icons/plus.svg" alt="">
+            </summary>
+            <p class="order__text">СВ ХИМ</p>
+            <p class="order__text">Лукойл</p>
+            <p class="order__text">Нордойл</p>
+            <p class="order__text">Газпромнефть</p>
+            <p class="order__text">Обникс</p>
+          </details>
+          <details class="order__details">
+            <summary class="order__summary">
+              Импортная автохимия
+              <img src="./images/icons/plus.svg" alt="">
+            </summary>
+            <p class="order__text">СВ ХИМ</p>
+            <p class="order__text">Лукойл</p>
+            <p class="order__text">Нордойл</p>
+            <p class="order__text">Газпромнефть</p>
+            <p class="order__text">Обникс</p>
+          </details>
+        </div>
+      </div>
+      <div class="order__wrap order__wrap-right">
+        <table class="order__table">
+          <tbody>
+            <tr class="order__line">
+              <td class="order__column order__column-top">Товар</td>
+              <td class="order__column order__column-top">ДОСТУПНЫЙ ОСТАТОК</td>
+              <td class="order__column order__column-top">ЦЕНА</td>
+              <td class="order__column order__column-top"></td>
+            </tr>
+            <tr class="order__line">
+              <td class="order__column">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</td>
+              <td class="order__column">более 100</td>
+              <td class="order__column">786 руб</td>
+              <td class="order__column"><img src="./images/icons/plus.svg" alt=""></td>
+            </tr>
+            <tr class="order__line">
+              <td class="order__column">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</td>
+              <td class="order__column">более 100</td>
+              <td class="order__column">786 РУБ</td>
+              <td class="order__column"><img src="./images/icons/plus.svg" alt=""></td>
+            </tr>
+            <tr class="order__line">
+              <td class="order__column">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</td>
+              <td class="order__column">70</td>
+              <td class="order__column">786 РУБ</td>
+              <td class="order__column"><img src="./images/icons/plus.svg" alt=""></td>
+            </tr>
+            <tr class="order__line">
+              <td class="order__column">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</td>
+              <td class="order__column">более 100</td>
+              <td class="order__column">786 РУБ</td>
+              <td class="order__column"><img src="./images/icons/plus.svg" alt=""></td>
+            </tr>
+            <tr class="order__line">
+              <td class="order__column">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</td>
+              <td class="order__column">более 100</td>
+              <td class="order__column">786 РУБ</td>
+              <td class="order__column"><img src="./images/icons/plus.svg" alt=""></td>
+            </tr>
+            <tr class="order__line">
+              <td class="order__column">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</td>
+              <td class="order__column">более 100</td>
+              <td class="order__column">786 РУБ</td>
+              <td class="order__column"><img src="./images/icons/plus.svg" alt=""></td>
+            </tr>
+            <tr class="order__line">
+              <td class="order__column">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</td>
+              <td class="order__column">более 100</td>
+              <td class="order__column">786 РУБ</td>
+              <td class="order__column"><img src="./images/icons/plus.svg" alt=""></td>
+            </tr>
+            <tr class="order__line">
+              <td class="order__column">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</td>
+              <td class="order__column">более 100</td>
+              <td class="order__column">786 РУБ</td>
+              <td class="order__column"><img src="./images/icons/plus.svg" alt=""></td>
+            </tr>
+            <tr class="order__line">
+              <td class="order__column">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</td>
+              <td class="order__column">более 100</td>
+              <td class="order__column">786 РУБ</td>
+              <td class="order__column"><img src="./images/icons/plus.svg" alt=""></td>
+            </tr>
+            <tr class="order__line">
+              <td class="order__column">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</td>
+              <td class="order__column">более 100</td>
+              <td class="order__column">786 РУБ</td>
+              <td class="order__column"><img src="./images/icons/plus.svg" alt=""></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="order__wrapper order__wrapper-second">
+      <div class="order__wrap-bottom">
+        <h3 class="order__subtitle">РАНЕЕ ЗАКАЗЫВАЛИ</h3>
+        <table class="order__table-second">
+          <tbody>
+            <tr class="order__table-second__line">
+              <td class="order__table-second__column">10.12.2022 </td>
+              <td class="order__table-second__column">номер заказа</td>
+              <td class="order__table-second__column">155 000 руб.</td>
+              <td class="order__table-second__column"><button class="order__btn">повторить заказ</button></td>
+            </tr>
+            <tr class="order__table-second__line">
+              <td class="order__table-second__column">10.12.2022 </td>
+              <td class="order__table-second__column">номер заказа</td>
+              <td class="order__table-second__column">155 000 руб.</td>
+              <td class="order__table-second__column"><button class="order__btn">повторить заказ</button></td>
+            </tr>
+            <tr class="order__table-second__line">
+              <td class="order__table-second__column">10.12.2022 </td>
+              <td class="order__table-second__column">номер заказа</td>
+              <td class="order__table-second__column">155 000 руб.</td>
+              <td class="order__table-second__column"><button class="order__btn">повторить заказ</button></td>
+            </tr>
+            <tr class="order__table-second__line">
+              <td class="order__table-second__column">10.12.2022 </td>
+              <td class="order__table-second__column">номер заказа</td>
+              <td class="order__table-second__column">155 000 руб.</td>
+              <td class="order__table-second__column"><button class="order__btn">повторить заказ</button></td>
+            </tr>
+            <tr class="order__table-second__line">
+              <td class="order__table-second__column">10.12.2022 </td>
+              <td class="order__table-second__column">номер заказа</td>
+              <td class="order__table-second__column">155 000 руб.</td>
+              <td class="order__table-second__column"><button class="order__btn">повторить заказ</button></td>
+            </tr>
+            <tr class="order__table-second__line">
+              <td class="order__table-second__column">10.12.2022 </td>
+              <td class="order__table-second__column">номер заказа</td>
+              <td class="order__table-second__column">155 000 руб.</td>
+              <td class="order__table-second__column"><button class="order__btn">повторить заказ</button></td>
+            </tr>
+            <tr class="order__table-second__line">
+              <td class="order__table-second__column">10.12.2022 </td>
+              <td class="order__table-second__column">номер заказа</td>
+              <td class="order__table-second__column">155 000 руб.</td>
+              <td class="order__table-second__column"><button class="order__btn">повторить заказ</button></td>
+            </tr>
+            <tr class="order__table-second__line">
+              <td class="order__table-second__column">10.12.2022 </td>
+              <td class="order__table-second__column">номер заказа</td>
+              <td class="order__table-second__column">155 000 руб.</td>
+              <td class="order__table-second__column"><button class="order__btn">повторить заказ</button></td>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
+      <div class="order__wrap-bottom-right">
+        <h3 class="order__subtitle">ДЕТАЛИ ЗАКАЗА</h3>
+        <table class="order__table-third">
+          <tbody>
+            <tr class="order__table-third__line">
+              <td class="order__table-third__column order__table-third__column-top">Товар</td>
+              <td class="order__table-third__column order__table-third__column-top">КОЛИЧЕСТВО</td>
+              <td class="order__table-third__column order__table-third__column-top">ЦЕНА</td>
+              <td class="order__table-third__column order__table-third__column-top">ОБЩАЯ СУММА</td>
+              <td class="order__table-third__column order__table-third__column-top"></td>
+            </tr>
+            <tr class="order__table-third__line">
+              <td class="order__table-third__column">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</td>
+              <td class="order__table-third__column">300000</td>
+              <td class="order__table-third__column">786 РУБ</td>
+              <td class="order__table-third__column">1200786</td>
+              <td class="order__table-third__column"><img src="./images/icons/cross.svg" alt=""></td>
+            </tr>
+            <tr class="order__table-third__line">
+              <td class="order__table-third__column">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</td>
+              <td class="order__table-third__column">300000</td>
+              <td class="order__table-third__column">786 РУБ</td>
+              <td class="order__table-third__column">1200786</td>
+              <td class="order__table-third__column"><img src="./images/icons/cross.svg" alt=""></td>
+            </tr>
+            <tr class="order__table-third__line">
+              <td class="order__table-third__column">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</td>
+              <td class="order__table-third__column">300000</td>
+              <td class="order__table-third__column">786 РУБ</td>
+              <td class="order__table-third__column">1200786</td>
+              <td class="order__table-third__column"><img src="./images/icons/cross.svg" alt=""></td>
+            </tr>
+            <tr class="order__table-third__line">
+              <td class="order__table-third__column">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</td>
+              <td class="order__table-third__column">300000</td>
+              <td class="order__table-third__column">786 РУБ</td>
+              <td class="order__table-third__column">1200786</td>
+              <td class="order__table-third__column"><img src="./images/icons/cross.svg" alt=""></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+   
+    <div class="order__mobile">
+      
+      <h3 class="order__mobile__subtitle">Детали заказа:</h3>
+      <div class="order__mobile__wrap">
+        <h4 class="order__mobile__description">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h4>
+        <div class="order__mobile__block-top">
+          <div class="order__mobile__wrapper">
+            <p class="order__mobile__text">Доступный остаток:</p>
+            <p class="order__mobile__text">50 000 шт</p>
+          </div>
+          <div class="order__mobile__wrapper">
+            <p class="order__mobile__text">Цена:</p>
+            <p class="order__mobile__text">786</p>
+          </div>
+        </div>
+          <div class="order__mobile__block">
+            <div class="order__mobile__block-color">
+              <p class="order__mobile__text-color">Сумма:</p>
+            <p class="order__mobile__text-color">64, 950.00.</p>
+            </div>
+            <div class="order__mobile__counter">
+              <div class="counter">
+                <div class="order__mobile__price__wrap price__wrap">
+                    <button type="button" class="minus order__mobile__minus">-</button>
+                    <input type="number" class="number order__mobile__input" value="500" placeholder="1">
+                    <button type="button" class="order__mobile__plus plus">+</button>
+                </div>
+            </div>
+            </div>
+            <button class="order__mobile__btn">Убрать</button>
+          </div>
+      </div>
+      <div class="order__mobile__wrap">
+        <h4 class="order__mobile__description">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h4>
+        <div class="order__mobile__block-top">
+          <div class="order__mobile__wrapper">
+            <p class="order__mobile__text">Доступный остаток:</p>
+            <p class="order__mobile__text">50 000 шт</p>
+          </div>
+          <div class="order__mobile__wrapper">
+            <p class="order__mobile__text">Цена:</p>
+            <p class="order__mobile__text">786</p>
+          </div>
+        </div>
+          <div class="order__mobile__block">
+            <div class="order__mobile__block-color">
+              <p class="order__mobile__text-color">Сумма:</p>
+            <p class="order__mobile__text-color">64, 950.00.</p>
+            </div>
+            <div class="order__mobile__counter">
+              <div class="counter">
+                <div class="order__mobile__price__wrap price__wrap">
+                    <button type="button" class="minus order__mobile__minus">-</button>
+                    <input type="number" class="number order__mobile__input" value="500" placeholder="1">
+                    <button type="button" class="order__mobile__plus plus">+</button>
+                </div>
+            </div>
+            </div>
+            <button class="order__mobile__btn">Убрать</button>
+          </div>
+      </div>
+      <div class="order__mobile__wrap">
+        <h4 class="order__mobile__description">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h4>
+        <div class="order__mobile__block-top">
+          <div class="order__mobile__wrapper">
+            <p class="order__mobile__text">Доступный остаток:</p>
+            <p class="order__mobile__text">50 000 шт</p>
+          </div>
+          <div class="order__mobile__wrapper">
+            <p class="order__mobile__text">Цена:</p>
+            <p class="order__mobile__text">786</p>
+          </div>
+        </div>
+          <div class="order__mobile__block">
+            <div class="order__mobile__block-color">
+              <p class="order__mobile__text-color">Сумма:</p>
+            <p class="order__mobile__text-color">64, 950.00.</p>
+            </div>
+            <div class="order__mobile__counter">
+              <div class="counter">
+                <div class="order__mobile__price__wrap price__wrap">
+                    <button type="button" class="minus order__mobile__minus">-</button>
+                    <input type="number" class="number order__mobile__input" value="500" placeholder="1">
+                    <button type="button" class="order__mobile__plus plus">+</button>
+                </div>
+            </div>
+            </div>
+            <button class="order__mobile__btn">Убрать</button>
+          </div>
+      </div>
+      <div class="order__mobile__wrap">
+        <h4 class="order__mobile__description">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h4>
+        <div class="order__mobile__block-top">
+          <div class="order__mobile__wrapper">
+            <p class="order__mobile__text">Доступный остаток:</p>
+            <p class="order__mobile__text">50 000 шт</p>
+          </div>
+          <div class="order__mobile__wrapper">
+            <p class="order__mobile__text">Цена:</p>
+            <p class="order__mobile__text">786</p>
+          </div>
+        </div>
+          <div class="order__mobile__block">
+            <div class="order__mobile__block-color">
+              <p class="order__mobile__text-color">Сумма:</p>
+            <p class="order__mobile__text-color">64, 950.00.</p>
+            </div>
+            <div class="order__mobile__counter">
+              <div class="counter">
+                <div class="order__mobile__price__wrap price__wrap">
+                    <button type="button" class="minus order__mobile__minus">-</button>
+                    <input type="number" class="number order__mobile__input" value="500" placeholder="1">
+                    <button type="button" class="order__mobile__plus plus">+</button>
+                </div>
+            </div>
+            </div>
+            <button class="order__mobile__btn">Убрать</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="order__block-bottom">
+      <div class="order__block-bottom__text">
+        <h3 class="order__price-subtitle">СУММА ЗАКАЗА</h3>
+        <h3 class="order__price">15000 РУБ</h3>
+      </div>
+      <div class="button__six order__button-gray">
+        <p class="order__button__text">заказать</p>
+        <img class="order__button__img" src="./images/icons/Subtract.svg" alt="">
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<script>
+  function counterFunction(count) {
+
+let plus = count.querySelector('.plus');
+let minus = count.querySelector('.minus');
+let number = count.querySelector('.number');
+let numberValue = parseFloat(number.value, 10);
+
+minus.addEventListener('click', function() {
+
+  if (numberValue === 0) {
+    return;
+  };
+
+  numberValue--;
+  number.value = numberValue;
+});
+
+plus.addEventListener('click', function() {
+  numberValue++;
+  number.value = numberValue;
+});
+
+}
+let counts = document.querySelectorAll('.counter');
+
+counts.forEach(counterFunction);
+
+
+let modalButtonSix = document.querySelector(".button__six");
+let modalSix = document.querySelector(".modal-six");
+let modalSixClose = document.querySelector(".close-btn-six");
+
+modalButtonSix.addEventListener("click", function () {
+  modalSix.style.display = "flex";
+});
+modalSixClose.addEventListener("click", function () {
+  modalSix.style.display = "none";
+});
+modalSix.addEventListener("click", function (event) {
+  if (event.target === modalSix) {
+    modalSix.style.display = "none";
+  }
+});
+
+let modalButtonSeven = document.querySelector(".adopted");
+let modalSeven = document.querySelector(".modal-seven");
+// let modalSevenClose = document.querySelector(".close-btn-six");
+modalButtonSeven.addEventListener("click", function () {
+  modalSix.style.display = "none";
+});
+modalButtonSeven.addEventListener("click", function () {
+  modalSeven.style.display = "flex";
+});
+
+modalSeven.addEventListener("click", function (event) {
+  if (event.target === modalSeven) {
+    modalSeven.style.display = "none";
+  }
+});
+</script>
+        
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <a href="./index.html">
+      <img class="footer__img-top" src="./images/icons/logo.svg" alt="">
+    </a>
+    <ul class="menu__list footer__list" id="footer__list">
+      <li class="menu__item-first footer__item"><a href="./about.html"> О КОМПАНИИ</a></li>
+      <li class="menu__item-first footer__item"><a href="./main-brands.html">БРЕНДЫ</a></li>
+      <li class="menu__item-first footer__item"><a href="./main-promotions.html">АКЦИИ</a></li>
+      <li class="menu__item-first footer__item"><a href="./main-contacts.html">КОНТАКТЫ</a> </li>
+      <li class="menu__item-first footer__item"><a href="./data.html">ЛИЧНЫЙ КАБИНЕТ</a></li>
+    </ul>
+    <div class="footer__wrapper">
+      <a href="./index.html">
+        <img class="footer__img" src="./images/icons/logo.svg" alt="">
+      </a>
+      <div class="footer__wrap">
+        <p class="footer__text footer__text-left">Г. МОСКВА, ПРОЕЗД ПОХОДНЫЙ, Д. 4 К. 1 ЭТАЖ МАНСАРДНЫЙ ПОМ. XIII Ч К №4</p>
+        <a href="./politics.html">
+          <p class="footer__text">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html> 

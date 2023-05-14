@@ -1,0 +1,1669 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@1.8.9/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <title>каталог</title>
+</head>
+
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="./index.html">
+        <img class="header__logo logo" src="./images/icons/logo.svg" alt=""></a>
+      <nav class="header__menu menu nav">
+        <ul class="menu__list">
+          <li class="menu__item-first"><a a href="./about.html" class="menu__link">О КОМПАНИИ</a></li>
+          <li class="menu__item-first"><a a href="./main-brands.html" class="menu__link">БРЕНДЫ</a></li>
+          <li class="menu__item-first"><a a href="./main-promotions.html" class="menu__link">АКЦИИ</a></li>
+          <li class="menu__item-first"><a a href="./main-contacts.html" class="menu__link">КОНТАКТЫ</a></li>
+        </ul>
+        <ul class="menu__list">
+          <li class="menu__item menu__item__icon">
+            <a href="./404.html">
+            <div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second" src="./images/icons/Whatsapp.svg" alt="">
+          </div>
+        </a>
+          </li>
+          <li class="menu__item menu__item__icon"><a href="./404.html"><div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second main__img-custom" src="./images/icons/airplane.svg" alt="">
+          </div></a></li>
+          <li id="modalBtn" class="menu__item menu__item__icon"><a><div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second" src="./images/icons/user.svg" alt="">
+          </div></a></li>
+          <li class="menu__item menu__item__icon menu__item-right">ИМЯ ПОЛЬЗОВАТЕЛЯ</li>
+          <li class="menu__item menu__item__icon menu__item-right menu__item-entrance">ВХОД В ЛИЧНЫЙ КАБИНЕТ</li>
+        </ul>
+        <ul class="menu__list-new">
+          <li class="menu__item menu__item__icon">
+            <a href="./404.html">
+            <div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second" src="./images/icons/Whatsapp.svg" alt="">
+          </div>
+        </a>
+          </li>
+          <li class="menu__item menu__item__icon"><a href="./404.html"><div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second main__img-custom" src="./images/icons/airplane.svg" alt="">
+          </div></a>
+        </li>
+          <li class="menu__item-text">ВХОД В ЛИЧНЫЙ КАБИНЕТ</li>
+          <li id="modalBtn" class="menu__item menu__item-user"><a><div class="main__img__block">
+            <img class="main__img-first rot" src="./images/icons/spinner.svg" alt="">
+            <img class="main__img-second" src="./images/icons/user.svg" alt="">
+          </div></a></li>
+          <li class="menu__item menu__item__icon menu__item-right menu__item-entrance">ВХОД В ЛИЧНЫЙ КАБИНЕТ</li>
+        </ul>
+        <button class="menu__button">ВЫХОД</button>
+        
+      </nav>
+      <div class="burger burger__btn"></div>
+    </div>
+  </div>
+  <div class="modal">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Логин</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Пароль</p>
+          <input class="modal__input modal__input__pass" type="password">
+          <button class="modal__button">ВХОД</button>
+          <p class="modal__button modal__button-second" id="create-an-application">ЗАЯВКА НА ЛИЧНЫЙ КАБИНЕТ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-second">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-new" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-third">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-third" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing2"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fourth">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-fourth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title">ВАША ЗАЯВКА ПРИНЯТА</h2>
+          <h3 class="modal__subtitle">МЫ СВЯЖЕМСЯ С ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fifth">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-fifth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text" id="application-processing2">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-six">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-six" src="./images/icons/Union.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text adopted">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-seven">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap modal-seven__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title modal-seven__title">ВАШ ЗАКАЗ ПРИНЯТ</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+    <div class="wrapper">
+      
+      <main class="page" id="brands">
+        <section class="catalog">
+  <div class="container">
+    <div class="catalog__wrap__block">
+      <a href="./main-catalog.html"><button class="catalog__button">КАТАЛОГ</button></a>
+      <a href="./order.html"><button class="catalog__button">СОЗДАТЬ ЗАКАЗ</button></a>
+      <a href="./history-order.html"><button class="catalog__button">ИСТОРИЯ ЗАКАЗОВ</button></a>
+      <a href="./data.html"><button class="catalog__button">ЛИЧНЫЕ ДАННЫЕ</button></a> 
+    </div>
+   
+  </div>
+</section>
+        <section class="catalog-first">
+  <div class="container">
+  <ul class="catalog__list-top">
+    <li class="catalog__item-top"><a href="#">Личный кабинет</a></li>
+    <li class="catalog__item-top"><a href="#">Каталог</a></li>
+  </ul>
+  <details class="order__mobile__details">
+    <summary class="order__mobile__summary">
+     <p class="catalog__text__order order__mobil__summary__text">Фильтры</p>  <img src="./images/icons/link.svg" alt="">
+    </summary>
+    <div class="order__mobile__details__block">
+      <div class="sidebar__sum sidebar__sum-new">
+        <h3 class="sidebar__subtitle catalog-first__subtitle">Сумма</h3>
+        <!-- <div class="sidebar__wrapper">
+          <input class="sidebar__input" type="text">
+          <input class="sidebar__input" type="text">
+        </div> -->
+        <div class="sidebar__range__block">
+          <div class="flex items-center h-screen justify-center">
+  <div x-data="range()" x-init="mintrigger(); maxtrigger()" class="relative max-w-xl w-full">
+    <div class="range-wrap">
+      <input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="mintrigger" x-model="minprice" class="absolute z-20 appearance-none cursor-pointer h-2 opacity-0 pointer-events-none w-full">
+
+      <input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="maxtrigger" x-model="maxprice" class="absolute z-20 appearance-none cursor-pointer h-2 opacity-0 pointer-events-none w-full">
+
+      <div class="h-2 relative z-10">
+
+        <div class="absolute top-0 bottom-0 rounded-md bg-gray-200 left-0 right-0 z-10"></div>
+
+        <div class="absolute top-0 bg-orange-500 abs-ramge bottom-0 rounded-md z-20" x-bind:style="'right:'+maxthumb+'%; left:'+minthumb+'%'"></div>
+
+        <div class="absolute top-0 bg-orange-500 -mt-2 absolute-range h-3 rounded-full w-3 z-30 left-0" x-bind:style="'left: '+minthumb+'%'"></div>
+
+        <div class="absolute top-0 bg-orange-500 -mt-2 absolute-range h-3 rounded-full w-3 z-30 right-0" x-bind:style="'right: '+maxthumb+'%'"></div>
+
+      </div>
+
+    </div>
+
+      <div class="flex items-center justify-between pt-5 space-x-4 text-gray-700 text-sm">
+        <div>
+          <input type="text" maxlength="5" x-on:input.debounce="mintrigger" x-model="minprice" wire:model.debounce.300="minPrice" class="bg-gray-50 border border-gray-200 focus:border-yellow-400 focus:outline-none px-3 py-2 rounded-lg text-center w-24">
+        </div>
+        <div>
+          <input type="text" maxlength="5" x-on:input.debounce.300="maxtrigger" x-model="maxprice" wire:model.debounce="maxPrice" class="bg-gray-50 border border-gray-200 focus:border-yellow-400 focus:outline-none px-3 py-2 rounded-lg text-center w-24">
+        </div>
+      </div>
+
+  </div>
+
+  <script>
+    function range() {
+      return {
+        minprice: 0,
+        maxprice: 10000,
+        min: 0,
+        max: 10000,
+        minthumb: 0,
+        maxthumb: 0,
+        mintrigger() {
+          this.validation();
+          this.minprice = Math.min(this.minprice, this.maxprice - 500);
+          this.minthumb = ((this.minprice - this.min) / (this.max - this.min)) * 100;
+        },
+        maxtrigger() {
+          this.validation();
+          this.maxprice = Math.max(this.maxprice, this.minprice + 200);
+          this.maxthumb = 100 - (((this.maxprice - this.min) / (this.max - this.min)) * 100);
+        },
+        validation() {
+          if (/^\d*$/.test(this.minprice)) {
+            if (this.minprice > this.max) {
+              this.minprice = 9500;
+            }
+            if (this.minprice < this.min) {
+              this.minprice = this.min;
+            }
+          } else {
+            this.minprice = 0;
+          }
+          if (/^\d*$/.test(this.maxprice)) {
+            if (this.maxprice > this.max) {
+              this.maxprice = this.max;
+            }
+            if (this.maxprice < this.min) {
+              this.maxprice = 200;
+            }
+          } else {
+            this.maxprice = 10000;
+          }
+        }
+      }
+    }
+  </script>
+  <div class="absolute bottom-0 right-0 flex items-end justify-end mb-4 mr-4">
+  </div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+        </div>
+      </div>
+      <details class="sidebar__details">
+        <summary class="sidebar__summary">Тип
+          <img src="./images/icons/vector.svg" alt="">
+        </summary>
+        <div class="sidebar__block">
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">
+            Охлаждающие жидкости
+          </label>
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">
+            Тормозные жидкости
+          </label>
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">
+            Моторные масла
+          </label>
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">
+            Смазки
+          </label>
+          <div class="sidebar__block">
+            <label class="sidebar__label">
+              <input class="sidebar__checkbox" type="checkbox">
+              Охлаждающие жидкости
+            </label>
+          </div>
+        </div>
+      </details>
+      <details class="sidebar__details">
+        <summary class="sidebar__summary">Бренд
+          <img src="./images/icons/vector.svg" alt="">
+        </summary>
+        <div class="sidebar__block">
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">
+            СВ ХИМ
+          </label>
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">
+            Лукойл
+          </label>
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">
+            Нордойл
+          </label>
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">
+            Газпромнефть
+          </label>
+          <div class="sidebar__block">
+            <label class="sidebar__label">
+              <input class="sidebar__checkbox" type="checkbox">
+              Обникс
+            </label>
+          </div>
+        </div>
+      </details>
+      <label class="sidebar__label sidebar__label-new">
+        <input class="sidebar__checkbox sidebar__checkbox-bottom sidebar__checkbox-new" type="checkbox">Наличие на складе
+      </label>
+    </div>
+    
+  </details>
+  <!-- <div class="sidebar__sum sidebar__sum-new">
+    <h3 class="sidebar__subtitle">Сумма</h3>
+
+    <div class="sidebar__range__block">
+      <div class="h-screen flex justify-center items-center">
+  <div x-data="range()" x-init="mintrigger(); maxtrigger()" class="relative max-w-xl w-full">
+    <div class="range-wrap">
+      <input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="mintrigger" x-model="minprice" class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer">
+
+      <input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="maxtrigger" x-model="maxprice" class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer">
+
+      <div class="relative z-10 h-2">
+
+        <div class=" absolute z-10 left-0 right-0 bottom-0 top-0 rounded-md bg-gray-200"></div>
+
+        <div class="abs-ramge absolute z-20 top-0 bottom-0 rounded-md bg-orange-500" x-bind:style="'right:'+maxthumb+'%; left:'+minthumb+'%'"></div>
+
+        <div class=" absolute-range  absolute z-30 w-3 h-3 top-0 left-0 bg-orange-500 rounded-full -mt-2" x-bind:style="'left: '+minthumb+'%'"></div>
+
+        <div class=" absolute-range absolute z-30 w-3 h-3 top-0 right-0 bg-orange-500 rounded-full -mt-2" x-bind:style="'right: '+maxthumb+'%'"></div>
+
+      </div>
+
+    </div>
+
+      <div class="flex items-center justify-between pt-5 space-x-4 text-sm text-gray-700">
+        <div>
+          <input type="text" maxlength="5" x-on:input.debounce="mintrigger" x-model="minprice"
+            wire:model.debounce.300="minPrice"
+            class="w-24 px-3 py-2 text-center border border-gray-200 rounded-lg bg-gray-50 focus:border-yellow-400 focus:outline-none">
+        </div>
+        <div>
+          <input type="text" maxlength="5" x-on:input.debounce.300="maxtrigger" x-model="maxprice"
+            wire:model.debounce="maxPrice"
+            class="w-24 px-3 py-2 text-center border border-gray-200 rounded-lg bg-gray-50 focus:border-yellow-400 focus:outline-none">
+        </div>
+      </div>
+
+  </div>
+
+  <script>
+    function range() {
+      return {
+        minprice: 0,
+        maxprice: 10000,
+        min: 0,
+        max: 10000,
+        minthumb: 0,
+        maxthumb: 0,
+        mintrigger() {
+          this.validation();
+          this.minprice = Math.min(this.minprice, this.maxprice - 500);
+          this.minthumb = ((this.minprice - this.min) / (this.max - this.min)) * 100;
+        },
+        maxtrigger() {
+          this.validation();
+          this.maxprice = Math.max(this.maxprice, this.minprice + 200);
+          this.maxthumb = 100 - (((this.maxprice - this.min) / (this.max - this.min)) * 100);
+        },
+        validation() {
+          if (/^\d*$/.test(this.minprice)) {
+            if (this.minprice > this.max) {
+              this.minprice = 9500;
+            }
+            if (this.minprice < this.min) {
+              this.minprice = this.min;
+            }
+          } else {
+            this.minprice = 0;
+          }
+          if (/^\d*$/.test(this.maxprice)) {
+            if (this.maxprice > this.max) {
+              this.maxprice = this.max;
+            }
+            if (this.maxprice < this.min) {
+              this.maxprice = 200;
+            }
+          } else {
+            this.maxprice = 10000;
+          }
+        }
+      }
+    }
+  </script>
+  <div class="flex items-end justify-end absolute bottom-0 right-0 mb-4 mr-4">
+  </div>
+</div>
+<script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+<script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+  ></script>
+    </div>
+  </div>
+  <details class="sidebar__details">
+    <summary class="sidebar__summary">Тип
+      <img src="./images/icons/vector.svg" alt="">
+    </summary>
+    <div class="sidebar__block">
+      <label class="sidebar__label">
+        <input class="sidebar__checkbox" type="checkbox">
+        Охлаждающие жидкости
+      </label>
+      <label class="sidebar__label">
+        <input class="sidebar__checkbox" type="checkbox">
+        Тормозные жидкости
+      </label>
+      <label class="sidebar__label">
+        <input class="sidebar__checkbox" type="checkbox">
+        Моторные масла
+      </label>
+      <label class="sidebar__label">
+        <input class="sidebar__checkbox" type="checkbox">
+        Смазки
+      </label>
+      <div class="sidebar__block">
+        <label class="sidebar__label">
+          <input class="sidebar__checkbox" type="checkbox">
+          Охлаждающие жидкости
+        </label>
+      </div>
+    </div>
+  </details>
+  <details class="sidebar__details">
+    <summary class="sidebar__summary">Бренд
+      <img src="./images/icons/vector.svg" alt="">
+    </summary>
+    <div class="sidebar__block">
+      <label class="sidebar__label">
+        <input class="sidebar__checkbox" type="checkbox">
+        СВ ХИМ
+      </label>
+      <label class="sidebar__label">
+        <input class="sidebar__checkbox" type="checkbox">
+        Лукойл
+      </label>
+      <label class="sidebar__label">
+        <input class="sidebar__checkbox" type="checkbox">
+        Нордойл
+      </label>
+      <label class="sidebar__label">
+        <input class="sidebar__checkbox" type="checkbox">
+        Газпромнефть
+      </label>
+      <div class="sidebar__block">
+        <label class="sidebar__label">
+          <input class="sidebar__checkbox" type="checkbox">
+          Обникс
+        </label>
+      </div>
+    </div>
+  </details> -->
+  
+  <div class="catalog__wrapper">  
+    <div class="catalog__sidebar sidebar">
+      <div class="sidebar__sum">
+        <h3 class="sidebar__subtitle">Сумма</h3>
+        <!-- <div class="sidebar__wrapper">
+          <input class="sidebar__input" type="text">
+          <input class="sidebar__input" type="text">
+        </div>
+        <input type="range"> -->
+        <div class="flex items-center h-screen justify-center">
+  <div x-data="range()" x-init="mintrigger(); maxtrigger()" class="relative max-w-xl w-full">
+    <div class="range-wrap">
+      <input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="mintrigger" x-model="minprice" class="absolute z-20 appearance-none cursor-pointer h-2 opacity-0 pointer-events-none w-full">
+
+      <input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="maxtrigger" x-model="maxprice" class="absolute z-20 appearance-none cursor-pointer h-2 opacity-0 pointer-events-none w-full">
+
+      <div class="h-2 relative z-10">
+
+        <div class="absolute top-0 bottom-0 rounded-md bg-gray-200 left-0 right-0 z-10"></div>
+
+        <div class="absolute top-0 bg-orange-500 abs-ramge bottom-0 rounded-md z-20" x-bind:style="'right:'+maxthumb+'%; left:'+minthumb+'%'"></div>
+
+        <div class="absolute top-0 bg-orange-500 -mt-2 absolute-range h-3 rounded-full w-3 z-30 left-0" x-bind:style="'left: '+minthumb+'%'"></div>
+
+        <div class="absolute top-0 bg-orange-500 -mt-2 absolute-range h-3 rounded-full w-3 z-30 right-0" x-bind:style="'right: '+maxthumb+'%'"></div>
+
+      </div>
+
+    </div>
+
+      <div class="flex items-center justify-between pt-5 space-x-4 text-gray-700 text-sm">
+        <div>
+          <input type="text" maxlength="5" x-on:input.debounce="mintrigger" x-model="minprice" wire:model.debounce.300="minPrice" class="bg-gray-50 border border-gray-200 focus:border-yellow-400 focus:outline-none px-3 py-2 rounded-lg text-center w-24">
+        </div>
+        <div>
+          <input type="text" maxlength="5" x-on:input.debounce.300="maxtrigger" x-model="maxprice" wire:model.debounce="maxPrice" class="bg-gray-50 border border-gray-200 focus:border-yellow-400 focus:outline-none px-3 py-2 rounded-lg text-center w-24">
+        </div>
+      </div>
+
+  </div>
+
+  <script>
+    function range() {
+      return {
+        minprice: 0,
+        maxprice: 10000,
+        min: 0,
+        max: 10000,
+        minthumb: 0,
+        maxthumb: 0,
+        mintrigger() {
+          this.validation();
+          this.minprice = Math.min(this.minprice, this.maxprice - 500);
+          this.minthumb = ((this.minprice - this.min) / (this.max - this.min)) * 100;
+        },
+        maxtrigger() {
+          this.validation();
+          this.maxprice = Math.max(this.maxprice, this.minprice + 200);
+          this.maxthumb = 100 - (((this.maxprice - this.min) / (this.max - this.min)) * 100);
+        },
+        validation() {
+          if (/^\d*$/.test(this.minprice)) {
+            if (this.minprice > this.max) {
+              this.minprice = 9500;
+            }
+            if (this.minprice < this.min) {
+              this.minprice = this.min;
+            }
+          } else {
+            this.minprice = 0;
+          }
+          if (/^\d*$/.test(this.maxprice)) {
+            if (this.maxprice > this.max) {
+              this.maxprice = this.max;
+            }
+            if (this.maxprice < this.min) {
+              this.maxprice = 200;
+            }
+          } else {
+            this.maxprice = 10000;
+          }
+        }
+      }
+    }
+  </script>
+  <div class="absolute bottom-0 right-0 flex items-end justify-end mb-4 mr-4">
+  </div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+      </div>
+        <h3 class="sidebar__subtitle">Тип</h3>
+        <div class="sidebar__block">
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">
+            Охлаждающие жидкости
+          </label>
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">
+            Тормозные жидкости
+          </label>
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">
+            Моторные масла
+          </label>
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">
+            Смазки
+          </label>
+          <div class="sidebar__block">
+            <label class="sidebar__label">
+              <input class="sidebar__checkbox" type="checkbox">
+              Охлаждающие жидкости
+            </label>
+          </div>
+        </div>
+        <h3 class="sidebar__subtitle">Бренд</h3>
+        <div class="sidebar__block">
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">СВ ХИМ
+          </label>
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">Лукойл
+          </label>
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">Нордойл
+          </label>
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">Газпромнефть
+          </label>
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox" type="checkbox">Обникс
+          </label>
+        </div>
+        <label class="sidebar__label">
+          <input class="sidebar__checkbox sidebar__checkbox-bottom" type="checkbox">Наличие на складе
+        </label>
+    </div>
+    <div class="catalog__block-right">
+      <div class="catalogProduct">
+  <div class="catalogProduct__wrap-left">
+    <img class="cardProduct__img catalogProduct__img" src="./images/product.svg" alt="">
+    <div class="cardProduct__wrap catalogProduct__wrapper-bottom">
+      <p class="cardProduct__text-bottom catalogProduct__text-bottom">ИМЕЕТСЯ НА СКЛАДЕ</p>
+      <div class="cardProduct__text-wrap catalogProduct__text-wrap">
+        <p class="cardProduct__text-price catalogProduct__price-bottom">786</p>
+      </div>
+    </div>
+  </div>
+  <div class="catalogProduct__wrap-right">
+    <div class="catalogProduct__wrap__subtitle">
+      <h3 class="catalogProduct__subtitle-left">С.N.R.G.</h3>
+      <h3 class="catalogProduct__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h3>
+    </div>
+    <div class="catalogProduct__block">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__block">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__block">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__block catalogProduct__block-last">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__wrap-bottom">
+      <a class="catalogProduct__link" href="./card-details.html">ПОДРОБНЕЕ</a>
+      <button class="add catalogProduct__button" id="add">Добавить в заказ</button>
+    </div>
+  </div>
+</div>
+<div class="modal">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Логин</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Пароль</p>
+          <input class="modal__input modal__input__pass" type="password">
+          <button class="modal__button">ВХОД</button>
+          <p class="modal__button modal__button-second" id="create-an-application">ЗАЯВКА НА ЛИЧНЫЙ КАБИНЕТ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-second">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-new" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-third">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-third" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing2"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fourth">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-fourth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title">ВАША ЗАЯВКА ПРИНЯТА</h2>
+          <h3 class="modal__subtitle">МЫ СВЯЖЕМСЯ С ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fifth">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-fifth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text" id="application-processing2">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-six">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-six" src="./images/icons/Union.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text adopted">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-seven">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap modal-seven__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title modal-seven__title">ВАШ ЗАКАЗ ПРИНЯТ</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let modalButtonfifth = document.querySelector(".add");
+let modalFifth = document.querySelector(".modal-fifth");
+let modalFifthClose = document.querySelector(".close-btn-fifth");
+
+modalButtonfifth.addEventListener("click", function () {
+  modalFifth.style.display = "flex";
+});
+modalFifthClose.addEventListener("click", function () {
+  modalFifth.style.display = "none";
+});
+modalFifth.addEventListener("click", function (event) {
+  if (event.target === modalFifth) {
+    modalFifth.style.display = "none";
+  }
+});
+</script>
+      <div class="catalogProduct">
+  <div class="catalogProduct__wrap-left">
+    <img class="cardProduct__img catalogProduct__img" src="./images/product.svg" alt="">
+    <div class="cardProduct__wrap catalogProduct__wrapper-bottom">
+      <p class="cardProduct__text-bottom catalogProduct__text-bottom">ИМЕЕТСЯ НА СКЛАДЕ</p>
+      <div class="cardProduct__text-wrap catalogProduct__text-wrap">
+        <p class="cardProduct__text-price catalogProduct__price-bottom">786</p>
+      </div>
+    </div>
+  </div>
+  <div class="catalogProduct__wrap-right">
+    <div class="catalogProduct__wrap__subtitle">
+      <h3 class="catalogProduct__subtitle-left">С.N.R.G.</h3>
+      <h3 class="catalogProduct__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h3>
+    </div>
+    <div class="catalogProduct__block">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__block">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__block">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__block catalogProduct__block-last">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__wrap-bottom">
+      <a class="catalogProduct__link" href="./card-details.html">ПОДРОБНЕЕ</a>
+      <button class="add catalogProduct__button" id="add">Добавить в заказ</button>
+    </div>
+  </div>
+</div>
+<div class="modal">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Логин</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Пароль</p>
+          <input class="modal__input modal__input__pass" type="password">
+          <button class="modal__button">ВХОД</button>
+          <p class="modal__button modal__button-second" id="create-an-application">ЗАЯВКА НА ЛИЧНЫЙ КАБИНЕТ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-second">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-new" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-third">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-third" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing2"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fourth">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-fourth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title">ВАША ЗАЯВКА ПРИНЯТА</h2>
+          <h3 class="modal__subtitle">МЫ СВЯЖЕМСЯ С ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fifth">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-fifth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text" id="application-processing2">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-six">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-six" src="./images/icons/Union.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text adopted">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-seven">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap modal-seven__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title modal-seven__title">ВАШ ЗАКАЗ ПРИНЯТ</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let modalButtonfifth = document.querySelector(".add");
+let modalFifth = document.querySelector(".modal-fifth");
+let modalFifthClose = document.querySelector(".close-btn-fifth");
+
+modalButtonfifth.addEventListener("click", function () {
+  modalFifth.style.display = "flex";
+});
+modalFifthClose.addEventListener("click", function () {
+  modalFifth.style.display = "none";
+});
+modalFifth.addEventListener("click", function (event) {
+  if (event.target === modalFifth) {
+    modalFifth.style.display = "none";
+  }
+});
+</script>
+      <div class="catalogProduct">
+  <div class="catalogProduct__wrap-left">
+    <img class="cardProduct__img catalogProduct__img" src="./images/product.svg" alt="">
+    <div class="cardProduct__wrap catalogProduct__wrapper-bottom">
+      <p class="cardProduct__text-bottom catalogProduct__text-bottom">ИМЕЕТСЯ НА СКЛАДЕ</p>
+      <div class="cardProduct__text-wrap catalogProduct__text-wrap">
+        <p class="cardProduct__text-price catalogProduct__price-bottom">786</p>
+      </div>
+    </div>
+  </div>
+  <div class="catalogProduct__wrap-right">
+    <div class="catalogProduct__wrap__subtitle">
+      <h3 class="catalogProduct__subtitle-left">С.N.R.G.</h3>
+      <h3 class="catalogProduct__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h3>
+    </div>
+    <div class="catalogProduct__block">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__block">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__block">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__block catalogProduct__block-last">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__wrap-bottom">
+      <a class="catalogProduct__link" href="./card-details.html">ПОДРОБНЕЕ</a>
+      <button class="add catalogProduct__button" id="add">Добавить в заказ</button>
+    </div>
+  </div>
+</div>
+<div class="modal">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Логин</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Пароль</p>
+          <input class="modal__input modal__input__pass" type="password">
+          <button class="modal__button">ВХОД</button>
+          <p class="modal__button modal__button-second" id="create-an-application">ЗАЯВКА НА ЛИЧНЫЙ КАБИНЕТ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-second">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-new" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-third">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-third" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing2"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fourth">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-fourth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title">ВАША ЗАЯВКА ПРИНЯТА</h2>
+          <h3 class="modal__subtitle">МЫ СВЯЖЕМСЯ С ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fifth">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-fifth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text" id="application-processing2">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-six">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-six" src="./images/icons/Union.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text adopted">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-seven">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap modal-seven__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title modal-seven__title">ВАШ ЗАКАЗ ПРИНЯТ</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let modalButtonfifth = document.querySelector(".add");
+let modalFifth = document.querySelector(".modal-fifth");
+let modalFifthClose = document.querySelector(".close-btn-fifth");
+
+modalButtonfifth.addEventListener("click", function () {
+  modalFifth.style.display = "flex";
+});
+modalFifthClose.addEventListener("click", function () {
+  modalFifth.style.display = "none";
+});
+modalFifth.addEventListener("click", function (event) {
+  if (event.target === modalFifth) {
+    modalFifth.style.display = "none";
+  }
+});
+</script>
+      <div class="catalogProduct">
+  <div class="catalogProduct__wrap-left">
+    <img class="cardProduct__img catalogProduct__img" src="./images/product.svg" alt="">
+    <div class="cardProduct__wrap catalogProduct__wrapper-bottom">
+      <p class="cardProduct__text-bottom catalogProduct__text-bottom">ИМЕЕТСЯ НА СКЛАДЕ</p>
+      <div class="cardProduct__text-wrap catalogProduct__text-wrap">
+        <p class="cardProduct__text-price catalogProduct__price-bottom">786</p>
+      </div>
+    </div>
+  </div>
+  <div class="catalogProduct__wrap-right">
+    <div class="catalogProduct__wrap__subtitle">
+      <h3 class="catalogProduct__subtitle-left">С.N.R.G.</h3>
+      <h3 class="catalogProduct__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h3>
+    </div>
+    <div class="catalogProduct__block">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__block">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__block">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__block catalogProduct__block-last">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__wrap-bottom">
+      <a class="catalogProduct__link" href="./card-details.html">ПОДРОБНЕЕ</a>
+      <button class="add catalogProduct__button" id="add">Добавить в заказ</button>
+    </div>
+  </div>
+</div>
+<div class="modal">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Логин</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Пароль</p>
+          <input class="modal__input modal__input__pass" type="password">
+          <button class="modal__button">ВХОД</button>
+          <p class="modal__button modal__button-second" id="create-an-application">ЗАЯВКА НА ЛИЧНЫЙ КАБИНЕТ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-second">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-new" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-third">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-third" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing2"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fourth">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-fourth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title">ВАША ЗАЯВКА ПРИНЯТА</h2>
+          <h3 class="modal__subtitle">МЫ СВЯЖЕМСЯ С ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fifth">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-fifth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text" id="application-processing2">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-six">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-six" src="./images/icons/Union.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text adopted">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-seven">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap modal-seven__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title modal-seven__title">ВАШ ЗАКАЗ ПРИНЯТ</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let modalButtonfifth = document.querySelector(".add");
+let modalFifth = document.querySelector(".modal-fifth");
+let modalFifthClose = document.querySelector(".close-btn-fifth");
+
+modalButtonfifth.addEventListener("click", function () {
+  modalFifth.style.display = "flex";
+});
+modalFifthClose.addEventListener("click", function () {
+  modalFifth.style.display = "none";
+});
+modalFifth.addEventListener("click", function (event) {
+  if (event.target === modalFifth) {
+    modalFifth.style.display = "none";
+  }
+});
+</script>
+      <div class="catalogProduct">
+  <div class="catalogProduct__wrap-left">
+    <img class="cardProduct__img catalogProduct__img" src="./images/product.svg" alt="">
+    <div class="cardProduct__wrap catalogProduct__wrapper-bottom">
+      <p class="cardProduct__text-bottom catalogProduct__text-bottom">ИМЕЕТСЯ НА СКЛАДЕ</p>
+      <div class="cardProduct__text-wrap catalogProduct__text-wrap">
+        <p class="cardProduct__text-price catalogProduct__price-bottom">786</p>
+      </div>
+    </div>
+  </div>
+  <div class="catalogProduct__wrap-right">
+    <div class="catalogProduct__wrap__subtitle">
+      <h3 class="catalogProduct__subtitle-left">С.N.R.G.</h3>
+      <h3 class="catalogProduct__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h3>
+    </div>
+    <div class="catalogProduct__block">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__block">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__block">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__block catalogProduct__block-last">
+      <p class="catalogProduct__text">Характеристика 1</p>
+      <p class="catalogProduct__text">чтото</p>
+    </div>
+    <div class="catalogProduct__wrap-bottom">
+      <a class="catalogProduct__link" href="./card-details.html">ПОДРОБНЕЕ</a>
+      <button class="add catalogProduct__button" id="add">Добавить в заказ</button>
+    </div>
+  </div>
+</div>
+<div class="modal">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Логин</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Пароль</p>
+          <input class="modal__input modal__input__pass" type="password">
+          <button class="modal__button">ВХОД</button>
+          <p class="modal__button modal__button-second" id="create-an-application">ЗАЯВКА НА ЛИЧНЫЙ КАБИНЕТ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-second">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-new" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-third">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-third" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing2"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fourth">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-fourth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title">ВАША ЗАЯВКА ПРИНЯТА</h2>
+          <h3 class="modal__subtitle">МЫ СВЯЖЕМСЯ С ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fifth">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-fifth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text" id="application-processing2">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-six">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-six" src="./images/icons/Union.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text adopted">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-seven">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap modal-seven__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title modal-seven__title">ВАШ ЗАКАЗ ПРИНЯТ</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let modalButtonfifth = document.querySelector(".add");
+let modalFifth = document.querySelector(".modal-fifth");
+let modalFifthClose = document.querySelector(".close-btn-fifth");
+
+modalButtonfifth.addEventListener("click", function () {
+  modalFifth.style.display = "flex";
+});
+modalFifthClose.addEventListener("click", function () {
+  modalFifth.style.display = "none";
+});
+modalFifth.addEventListener("click", function (event) {
+  if (event.target === modalFifth) {
+    modalFifth.style.display = "none";
+  }
+});
+</script>
+    </div>
+  </div>
+</div>
+</section>
+        
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <a href="./index.html">
+      <img class="footer__img-top" src="./images/icons/logo.svg" alt="">
+    </a>
+    <ul class="menu__list footer__list" id="footer__list">
+      <li class="menu__item-first footer__item"><a href="./about.html"> О КОМПАНИИ</a></li>
+      <li class="menu__item-first footer__item"><a href="./main-brands.html">БРЕНДЫ</a></li>
+      <li class="menu__item-first footer__item"><a href="./main-promotions.html">АКЦИИ</a></li>
+      <li class="menu__item-first footer__item"><a href="./main-contacts.html">КОНТАКТЫ</a> </li>
+      <li class="menu__item-first footer__item"><a href="./data.html">ЛИЧНЫЙ КАБИНЕТ</a></li>
+    </ul>
+    <div class="footer__wrapper">
+      <a href="./index.html">
+        <img class="footer__img" src="./images/icons/logo.svg" alt="">
+      </a>
+      <div class="footer__wrap">
+        <p class="footer__text footer__text-left">Г. МОСКВА, ПРОЕЗД ПОХОДНЫЙ, Д. 4 К. 1 ЭТАЖ МАНСАРДНЫЙ ПОМ. XIII Ч К №4</p>
+        <a href="./politics.html">
+          <p class="footer__text">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html> 

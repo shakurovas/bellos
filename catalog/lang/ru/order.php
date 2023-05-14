@@ -1,0 +1,25 @@
+<?php
+$MESS['MAKE_AN_ORDER_PAGE_TITLE'] = 'каталог';
+$MESS['CATALOG'] = 'КАТАЛОГ';
+$MESS['CREATE_AN_ORDER'] = 'СОЗДАТЬ ЗАКАЗ';
+$MESS['HISTORY_OF_ORDERS'] = 'ИСТОРИЯ ЗАКАЗОВ';
+$MESS['PERSONAL_DATA'] = 'ЛИЧНЫЕ ДАННЫЕ';
+$MESS['PERSONAL_ACCOUNT'] = 'Личный кабинет';
+$MESS['MAKE_AN_ORDER'] = 'Создать заказ';
+$MESS['PREVIOUS_ORDERS'] = 'РАНЕЕ ЗАКАЗЫВАЛИ';
+$MESS['ORDER_DETAILS'] = 'ДЕТАЛИ ЗАКАЗА';
+$MESS['ORDER_DETAILS_CAPITALIZED'] = 'Детали заказа';
+$MESS['GOOD'] = 'Товар';
+$MESS['AMOUNT'] = 'КОЛИЧЕСТВО';
+$MESS['PRICE'] = 'ЦЕНА';
+$MESS['PRICE_CAPITALIZED'] = 'Цена';
+$MESS['TOTAL_SUM'] = 'ОБЩАЯ СУММА';
+$MESS['SUM'] = 'Сумма';
+$MESS['REMOVE'] = 'Убрать';
+$MESS['REMAINS'] = 'Доступный остаток';
+$MESS['UNIT'] = 'шт';
+$MESS['ORDERS_SUM'] = 'СУММА ЗАКАЗА';
+$MESS['RUB_UPPERCASE'] = 'РУБ';
+$MESS['ORDER'] = 'заказать';
+$MESS['NO_GOODS_ADDED_TO_CART'] = 'В корзине нет товаров';
+$MESS['YOU_ARE_NOT_AUTHORIZED'] = 'Вы не авторизованы';
